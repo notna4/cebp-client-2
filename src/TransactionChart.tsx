@@ -136,7 +136,7 @@ const TransactionChart: React.FC = () => {
             fill="#8884d8"
             label
           >
-            {pieData.map((entry, index) => (
+            {pieData.map((index) => (
               <Cell key={`cell-${index}`} fill={`#${Math.floor(Math.random() * 16777215).toString(16)}`} />
             ))}
           </Pie>
